@@ -1,45 +1,47 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
 public class CalculatorTest {
+
     @Test
-    void shouldAddingTwoValues() {
+    void shouldAddTwoValues() {
         //given
         int value1 = 2;
         int value2 = 2;
         //when
-        int add = Calculator.addResult(value1, value2);
+        int additionResult = Calculator.addResult(value1, value2);
         //then
-        Assertions.assertEquals(4, add);
+        Assertions.assertEquals(4, additionResult);
     }
 
-    void shouldSubstractionTwoValues() {
+    void shouldSubstractTwoValues() {
         //given
         int value1 = 5;
         int value2 = 2;
         //when
-        int substract = Calculator.substractResult(value1, value2);
+        int substractionResult = Calculator.substractResult(value1, value2);
         //then
-        Assertions.assertEquals(2, substract);
+        Assertions.assertEquals(2, substractionResult);
     }
 
-    void shouldMultiplicationTwoValues() {
+    void shouldMultipyTwoValues() {
         //given
         int value1 = 3;
         int value2 = 2;
         //when
-        int multiply = Calculator.multiplyResult(value1, value2);
+        int multiplicationResult = Calculator.multiplyResult(value1, value2);
         //then
-        Assertions.assertEquals(6, multiply);
+        Assertions.assertEquals(6, multiplicationResult);
     }
 
-    void shouldDivisionTwoValues() {
+    void shouldDividedTwoValues() {
         //given
         int value1 = 10;
         int value2 = 5;
         //when
-        int divide = Calculator.divideResult(value1, value2);
+        int divisionResult = Calculator.divideResult(value1, value2);
         //then
-        Assertions.assertEquals(2, divide);
+        Assertions.assertEquals(2, divisionResult);
     }
 
 }
